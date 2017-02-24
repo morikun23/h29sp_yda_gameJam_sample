@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 212704229615122784}
   - component: {fileID: 61139888878919726}
   m_Layer: 0
-  m_Name: Brock
+  m_Name: Block
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
