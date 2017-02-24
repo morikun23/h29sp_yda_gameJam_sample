@@ -27,9 +27,15 @@ public class Player : MonoBehaviour {
 
 		///////////////////////////////////////////////////////
 
-		if (Input.GetKeyDown(KeyCode.Space)) {
-			rigidbody2d.AddForce(new Vector2(0 , 400f));
+
+		///////////////////////////////////////////////////////
+		//Chapter5
+		if (Physics2D.Raycast(transform.position , Vector2.down , 2.0f , 1 << LayerMask.NameToLayer("Ground"))){
+			if (Input.GetKeyDown(KeyCode.Space)) {
+				rigidbody2d.AddForce(new Vector2(0 , 400f));
+			}
 		}
+		///////////////////////////////////////////////////////
 	}
 	
 }

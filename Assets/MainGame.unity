@@ -130,6 +130,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1846013572132924, guid: 81659875da8711b428bc352bd2944b6d, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 81659875da8711b428bc352bd2944b6d, type: 2}
   m_IsPrefabParent: 0
@@ -142,7 +146,7 @@ GameObject:
   m_Component:
   - component: {fileID: 206415429}
   - component: {fileID: 206415430}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ground (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -205,7 +209,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 247409533}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: AirBlock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -236,7 +240,7 @@ GameObject:
   m_Component:
   - component: {fileID: 396355037}
   - component: {fileID: 396355038}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ground (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -300,7 +304,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1083215578}
   - component: {fileID: 1083215579}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ground (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -364,7 +368,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1098030858}
   - component: {fileID: 1098030857}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -428,7 +432,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1125907258}
   - component: {fileID: 1125907259}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ground (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -493,7 +497,7 @@ GameObject:
   - component: {fileID: 1231027556}
   - component: {fileID: 1231027557}
   - component: {fileID: 1231027558}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: AirBrock (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -570,7 +574,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1548646338}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -606,7 +610,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1554862430}
   - component: {fileID: 1554862431}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ground (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -670,7 +674,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1659295441}
   - component: {fileID: 1659295442}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Stage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -919,7 +923,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1988173550}
   - component: {fileID: 1988173551}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ground (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
