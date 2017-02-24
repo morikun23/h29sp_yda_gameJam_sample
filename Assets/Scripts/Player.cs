@@ -6,6 +6,8 @@ public class Player : MonoBehaviour {
 
 	float speed = 0.1f;
 
+
+
 	// Use this for initialization
 	void Start() {
 
