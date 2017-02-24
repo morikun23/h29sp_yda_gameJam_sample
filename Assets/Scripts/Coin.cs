@@ -18,7 +18,7 @@ public class Coin : MonoBehaviour {
 	}
 
 	void OnTriggerEnter2D(Collider2D other) {
-		isGotten = true;
+		Destroy(this.gameObject);
 	}
 
 	public bool IsGotten() {
