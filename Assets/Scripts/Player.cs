@@ -5,12 +5,12 @@ using UnityEngine;
 public class Player : MonoBehaviour {
 
 	float speed = 0.1f;
-
+	Rigidbody2D rigidbody2d;
 
 
 	// Use this for initialization
 	void Start() {
-
+		rigidbody2d = GetComponent<Rigidbody2D>();
 	}
 
 	// Update is called once per frame
@@ -26,6 +26,10 @@ public class Player : MonoBehaviour {
 		}
 
 		///////////////////////////////////////////////////////
+
+		if (Input.GetKeyDown(KeyCode.Space)) {
+			rigidbody2d.AddForce(new Vector2(0 , 400f));
+		}
 	}
 	
 }
