@@ -7,11 +7,12 @@ public class GameManager : MonoBehaviour {
 
 	int score;
 	const int MAX_SCORE = 9999;
-
+	float limitTime;
 
 	// Use this for initialization
 	void Start () {
 		score = 0;
+		limitTime = 60;
 	}
 	
 	// Update is called once per frame
@@ -25,6 +26,8 @@ public class GameManager : MonoBehaviour {
 			}
 		}
 		
+		limitTime -= Time.deltaTime;
+		if(limitTime < 0) { limitTime = 0; }
 	}
 
 	void AddScore(int value) {
@@ -38,5 +41,9 @@ public class GameManager : MonoBehaviour {
 
 	public int GetScore() {
 		return score;
+	}
+
+	public float GetLimitTime() {
+		return limitTime;
 	}
 }

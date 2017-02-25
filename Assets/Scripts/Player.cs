@@ -22,9 +22,7 @@ public class Player : MonoBehaviour {
 	void Update() {
 
 		Run();
-
-		///////////////////////////////////////////////////////
-		//Chapter5
+		
 		isGrounded = Physics2D.Linecast(transform.position ,
 			transform.position - transform.up * 1.6f ,
 			1 << LayerMask.NameToLayer("Ground"));
@@ -36,21 +34,6 @@ public class Player : MonoBehaviour {
 	}
 
 	void Run() {
-		///////////////////////////////////////////////////////
-		//Chapter1
-
-		//if (Input.GetKey(KeyCode.RightArrow)) {
-		//	transform.position += new Vector3(speed , 0);
-		//}
-		//if (Input.GetKey(KeyCode.LeftArrow)) {
-		//	transform.position += new Vector3(-speed , 0);
-		//}
-
-		///////////////////////////////////////////////////////
-
-		///////////////////////////////////////////////////////
-		//Chapter6
-
 		velocity = Vector3.zero;
 
 		if (Input.GetKey(KeyCode.RightArrow)) {
@@ -61,8 +44,6 @@ public class Player : MonoBehaviour {
 
 		transform.position += velocity;
 		isRunning = !(velocity.magnitude == 0);
-
-		///////////////////////////////////////////////////////
 	}
 
 	void Jump() {
