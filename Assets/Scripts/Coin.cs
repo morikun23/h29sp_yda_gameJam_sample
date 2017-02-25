@@ -6,7 +6,9 @@ public class Coin : MonoBehaviour {
 
 	//取得された
 	bool isGotten;
-	
+
+	[SerializeField]
+	int score;
 
 	// Use this for initialization
 	void Start () {
@@ -24,5 +26,9 @@ public class Coin : MonoBehaviour {
 
 	public bool IsGotten() {
 		return isGotten;
+	}
+
+	public int GetScore() {
+		return score;
 	}
 }
