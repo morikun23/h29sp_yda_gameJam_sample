@@ -7,6 +7,7 @@ public class Player : MonoBehaviour {
 	float speed = 0.1f;
 	Rigidbody2D rigidbody2d;
 	Vector3 velocity;
+	AudioSource audioSource;
 
 	[SerializeField]
 	bool isRunning;
@@ -16,6 +17,7 @@ public class Player : MonoBehaviour {
 	// Use this for initialization
 	void Start() {
 		rigidbody2d = GetComponent<Rigidbody2D>();
+		audioSource = GetComponent<AudioSource>();
 	}
 
 	// Update is called once per frame
@@ -50,6 +52,7 @@ public class Player : MonoBehaviour {
 		if (!IsGrounded()) return;
 		isGrounded = false;
 		rigidbody2d.AddForce(new Vector2(0 , 400f));
+		audioSource.Play();
 	}
 
 	public bool IsRunning() {

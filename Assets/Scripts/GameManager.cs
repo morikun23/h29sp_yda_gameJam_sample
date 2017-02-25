@@ -9,10 +9,13 @@ public class GameManager : MonoBehaviour {
 	const int MAX_SCORE = 9999;
 	float limitTime;
 
+	AudioSource audioSource;
+
 	// Use this for initialization
 	void Start () {
 		score = 0;
 		limitTime = 60;
+		audioSource = GetComponent<AudioSource>();
 	}
 	
 	// Update is called once per frame
@@ -21,6 +24,7 @@ public class GameManager : MonoBehaviour {
 		
 		foreach(Coin coin in coins) {
 			if (coin.IsGotten()) {
+				audioSource.Play();
 				AddScore(coin.GetScore());
 				Destroy(coin.gameObject);
 			}

@@ -10,6 +10,8 @@ public class Coin : MonoBehaviour {
 	[SerializeField]
 	int score;
 
+	
+
 	// Use this for initialization
 	void Start () {
 		
@@ -31,4 +33,5 @@ public class Coin : MonoBehaviour {
 	public int GetScore() {
 		return score;
 	}
+	
 }
