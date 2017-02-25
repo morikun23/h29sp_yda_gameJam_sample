@@ -1,11 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System.Linq;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour {
 
-	int score;
+	static int score;
 	const int MAX_SCORE = 9999;
 	float limitTime;
 
@@ -31,7 +31,10 @@ public class GameManager : MonoBehaviour {
 		}
 		
 		limitTime -= Time.deltaTime;
-		if(limitTime < 0) { limitTime = 0; }
+		if(limitTime < 0) {
+			limitTime = 0;
+			SceneManager.LoadScene("Result");
+		}
 	}
 
 	void AddScore(int value) {
@@ -43,7 +46,7 @@ public class GameManager : MonoBehaviour {
 		}
 	}
 
-	public int GetScore() {
+	public static int GetScore() {
 		return score;
 	}
 

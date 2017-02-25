@@ -16,6 +16,6 @@ public class ScoreTextViewer : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		text.text = gameManager.GetScore().ToString();
+		text.text = GameManager.GetScore().ToString();
 	}
 }
