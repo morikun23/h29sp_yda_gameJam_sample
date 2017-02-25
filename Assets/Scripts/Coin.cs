@@ -6,6 +6,7 @@ public class Coin : MonoBehaviour {
 
 	//取得された
 	bool isGotten;
+	
 
 	// Use this for initialization
 	void Start () {
@@ -18,7 +19,7 @@ public class Coin : MonoBehaviour {
 	}
 
 	void OnTriggerEnter2D(Collider2D other) {
-		Destroy(this.gameObject);
+		isGotten = true;
 	}
 
 	public bool IsGotten() {
